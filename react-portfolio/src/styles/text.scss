@@ -1,0 +1,13 @@
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+.text-container {
+    @include display-flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: $block-center;
+    text-align: center;
+    padding: 0 $spacing;
+    color: $white;
+    margin-top: $spacing * 4;
+}

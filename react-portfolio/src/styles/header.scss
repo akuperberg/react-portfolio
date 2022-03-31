@@ -1,0 +1,33 @@
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+.navigation {
+    @include display-flex($justify-content: space-around);
+    padding: 40px
+  }
+
+.container-nav ul {
+    @include display-flex;
+    gap: 30px;
+    li {
+        list-style: none;
+        color: $accent;
+    }
+}
+  
+.container-name {    
+    @include display-flex;
+    gap: 20px;
+    img {
+      max-width: 100px;
+      border-radius: 50px;
+    }
+    div p {
+        color: $white;
+        margin: 8px 0;
+    }
+    div p:first-child {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+  }
